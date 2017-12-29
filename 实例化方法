@@ -25,7 +25,7 @@ namespace Demo1
                 Email = "",
             };
             //【方法3】：通过构造方法进行初始化
-            Student Tomas = new Student("","","","","","");
+            Student Tomas = new Student("","",Convert.ToDateTime"","","","");
         }
     }
     
