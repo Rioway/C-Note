@@ -48,6 +48,18 @@ namespace Demo1
         public Student()
         {}
         
+        public Student(string sno)
+        { SNO = sno; }
+        
+        public Student(string sno,string name)
+        { 
+            SNO = sno;
+            Name = name;     
+        }
+        
+        public Student(string sno,string name,string gender):this(sno,name)  //可使用this调用前面参数数量相同的构造方法
+        { Gender = gender; }
+        
         //构造方法(方法名与类名相同)
         public Student(string sno,string name,string birthday,string gender,string mobile,string email)
         {
