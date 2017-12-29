@@ -1,0 +1,43 @@
+
+namespace Demo1
+{
+    class Program
+    {
+        static void Main()
+        {
+           //【方法1】：一个个赋值
+            Student Abby = new Student();
+            Abby.SNO = "";
+            Abby.SName = "";
+            Abby.Gender = "";
+            Abby.Birthday = Convert.ToDateTime("yyyy-mm-dd");
+            Abby.Mobile = "";
+            Abby.Email = "";
+            
+            //【方法2】：对象初始化（逗号分隔）
+            Student Tony = Student()
+            {
+                SNO = "",
+                SName = "",
+                Gender = "",
+                Birthday = Convert.ToDateTime("yyyy-mm-dd"),
+                Mobile = "",
+                Email = "",
+            };
+        }
+    }
+    
+    class Student
+    {
+        //属性
+        public string SNO{get;set;}
+        public string SName{get;set;}
+        public string Gender{get;set;}
+        public string Birthday{get;set;}
+        public string Mobile{get;set;}
+        public string Email{get;set;}
+    }
+}
+
+
+
