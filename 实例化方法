@@ -24,6 +24,8 @@ namespace Demo1
                 Mobile = "",
                 Email = "",
             };
+            //【方法3】：通过构造方法进行初始化
+            Student Tomas = new Student("","","","","","");
         }
     }
     
@@ -36,6 +38,17 @@ namespace Demo1
         public string Birthday{get;set;}
         public string Mobile{get;set;}
         public string Email{get;set;}
+        
+        //构造方法
+        public void Student(string sno,string name,string birthday,string gender,string mobile,string email)
+        {
+            SNO = sno;
+            SName = name;
+            Birthday = birthday;
+            Gender = gender;
+            Mobile = mobile;
+            Email = email;
+        }
     }
 }
 
