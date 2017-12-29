@@ -4,7 +4,7 @@
 //构造函数的功能主要用于在类的对象创建时定义初始化的状态，他没有返回值，也不能用void来修饰。这就保证了它不仅什么也不用自动返回，而且根本不能有任何选择
 //一个类可以有多个构造函数，可根据参数的不同或参数类型的不同来区分，即构造函数的重载
 //构造函数不能被直接调用，必须通过new运算符在创建对象时才会自动调用
-
+//系统会自动再创建类时生成无参构造方法，在新建构造方法之后，则会自动删除。
 namespace Demo1
 {
     class Program
@@ -44,6 +44,9 @@ namespace Demo1
         public string Birthday{get;set;}
         public string Mobile{get;set;}
         public string Email{get;set;}
+        
+        public Student()
+        {}
         
         //构造方法(方法名与类名相同)
         public Student(string sno,string name,string birthday,string gender,string mobile,string email)
