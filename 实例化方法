@@ -46,7 +46,7 @@ namespace Demo1
         public string Email{get;set;}
         
         //构造方法(方法名与类名相同)
-        public void Student(string sno,string name,string birthday,string gender,string mobile,string email)
+        public Student(string sno,string name,string birthday,string gender,string mobile,string email)
         {
             SNO = sno;
             SName = name;
